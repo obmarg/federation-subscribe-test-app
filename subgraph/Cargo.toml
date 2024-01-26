@@ -1,0 +1,11 @@
+[package]
+name = "subgraph"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-graphql = "7"
+async-graphql-axum = "7"
+tokio = { version = "1.8", features = ["macros", "rt-multi-thread"] }
+tower-http = { version = "0.5", features = ["cors"] }
+axum = { version = "0.7.0", features = ["ws"] }
